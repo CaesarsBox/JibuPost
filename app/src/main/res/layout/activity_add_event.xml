@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".AddEventActivity">
+
+    <!-- Event Title Input -->
+    <EditText
+        android:id="@+id/edit_event_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Event Title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Date Input -->
+    <EditText
+        android:id="@+id/edit_event_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Event Date"
+        android:inputType="date"
+        app:layout_constraintTop_toBottomOf="@id/edit_event_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Time Input -->
+    <EditText
+        android:id="@+id/edit_event_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Event Time"
+        android:inputType="time"
+        app:layout_constraintTop_toBottomOf="@id/edit_event_date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Location Input -->
+    <EditText
+        android:id="@+id/edit_event_location"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Event Location"
+        app:layout_constraintTop_toBottomOf="@id/edit_event_time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/btn_save_event"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        app:layout_constraintTop_toBottomOf="@id/edit_event_location"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
